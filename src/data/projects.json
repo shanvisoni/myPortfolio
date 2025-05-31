@@ -1,0 +1,98 @@
+{
+  "projects": [
+    {
+      "id": "skillswap",
+      "title": "SkillSwap",
+      "description": "A peer-to-peer platform where users exchange skills with real-time chat, smart matching, and rating system.",
+      "longDescription": "SkillSwap revolutionizes skill exchange by connecting users who want to teach and learn different skills. The platform features intelligent matching algorithms, real-time communication, and a comprehensive rating system to ensure quality interactions.",
+      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+      "features": [
+        "Real-time Chat",
+        "Smart Matching Algorithm",
+        "Rating System",
+        "Location-based Search",
+        "Skill Categories",
+        "User Profiles"
+      ],
+      "icon": "Users",
+      "gradient": "from-purple-500 to-pink-500",
+      "status": "In Progress",
+      "startDate": "03/2025",
+      "endDate": "Present",
+      "demoUrl": "https://theskillswap.netlify.app/",
+      "githubUrl": "https://github.com/shanvisoni/SkillSwap",
+      "images": []
+    },
+    {
+      "id": "devconnector",
+      "title": "DevConnector",
+      "description": "A full-stack social networking platform for developers with GitHub integration and professional profiles.",
+      "longDescription": "DevConnector is a comprehensive social networking platform designed specifically for developers. It integrates with GitHub to showcase repositories, enables professional networking, and provides a space for developers to share their experiences and connect with peers.",
+      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
+      "features": [
+        "GitHub API Integration",
+        "JWT Authentication",
+        "Real-time Updates",
+        "Professional Profiles",
+        "Post & Comment System",
+        "Experience Showcase"
+      ],
+      "icon": "Code",
+      "gradient": "from-blue-500 to-cyan-500",
+      "status": "Completed",
+      "startDate": "04/2025",
+      "endDate": "08/2025",
+      "demoUrl": "https://devconnector-community-1-frontend.onrender.com/",
+      "githubUrl": "https://github.com/shanvisoni/DevConnector-Community",
+      "images": []
+    },
+    {
+      "id": "shopsphere",
+      "title": "ShopSphere",
+      "description": "E-commerce platform with advanced filtering, cart management, and comprehensive admin dashboard.",
+      "longDescription": "ShopSphere is a full-featured e-commerce solution with advanced product filtering, secure payment integration, comprehensive order management, and a powerful admin dashboard for managing products, categories, and customer orders.",
+      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
+      "features": [
+        "Advanced Product Filtering",
+        "Shopping Cart Management",
+        "Order Tracking System",
+        "Admin Dashboard",
+        "Secure Authentication",
+        "Payment Integration"
+      ],
+      "icon": "ShoppingCart",
+      "gradient": "from-green-500 to-teal-500",
+      "status": "Completed",
+      "startDate": "03/2024",
+      "endDate": "07/2025",
+      "demoUrl": "https://shopsphere-suwf.onrender.com/",
+      "githubUrl": "https://github.com/shanvisoni/shopSphere_",
+      "images": []
+    },
+     {
+      "id": "taskorganizer",
+      "title": "Task Organizer",
+      "description": "A dynamic task manager with features like create/edit/delete and status tracking for personalized user access.",
+      "longDescription": "Task Organizer is a comprehensive task management application that helps users organize their daily activities efficiently. The application features secure user authentication, optimized state management, and an intuitive interface for managing tasks with different priority levels and status tracking.",
+      "techStack": ["React.js", "Redux Toolkit", "Tailwind CSS", "Firebase"],
+      "features": [
+        "Create/Edit/Delete Tasks",
+        "Status Tracking System",
+        "Firebase Authentication",
+        "Personalized User Access",
+        "Redux State Management",
+        "Responsive Design",
+        "Task Priority Levels",
+        "Real-time Updates"
+      ],
+      "icon": "CheckSquare",
+      "gradient": "from-orange-500 to-red-500",
+      "status": "Completed",
+      "startDate": "03/2023",
+      "endDate": "03/2023",
+      "demoUrl": "https://todo-list-ae523.web.app/",
+      "githubUrl": "https://github.com/shanvisoni/Firebase_Project",
+      "images": []
+    }
+  ]
+}

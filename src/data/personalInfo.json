@@ -1,0 +1,38 @@
+{
+  "personalInfo": {
+    "name": "Shanvi Soni",
+    "title": "Full-Stack Developer",
+    "tagline": "Passionate B.Tech Computer Science student crafting beautiful, user-focused web applications with the MERN stack",
+    "location": "Bhopal, MP, India",
+    "phone": "+91-7388994402",
+    "email": "shanvisoni7388@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/shanvi-soni-b80474258/",
+    "github": "https://github.com/shanvisoni",
+    "portfolio": "#",
+    "leetcode": "https://leetcode.com/u/shanvi_soni21/"
+  },
+  "education": {
+    "university": "SAGE University, Bhopal",
+    "degree": "B.Tech in Computer Science and Engineering",
+    "cgpa": "8.28",
+    "expectedGraduation": "June 2026",
+    "location": "Bhopal, MP, India"
+  },
+  "currentRole": {
+    "position": "MERN Stack Intern",
+    "company": "Reactify Labs",
+    "type": "Remote",
+    "startDate": "May 2025",
+    "endDate": "Present",
+    "responsibilities": [
+      "Working on real-world projects using the MERN stack: MongoDB, Express.js, React.js, and Node.js",
+      "Collaborating with the development team on UI design and API integration",
+      "Applying best practices in Git/GitHub, version control, and deployment",
+      "Strengthening core skills in frontend and backend development under industry mentorship"
+    ]
+  },
+  "summary": [
+    "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.28, I combine academic excellence with hands-on industry experience.",
+    "As a MERN Stack Intern at Reactify Labs, I work on real-world projects, collaborate with development teams, and continuously strengthen my skills in both frontend and backend development under industry mentorship."
+  ]
+}

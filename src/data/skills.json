@@ -1,0 +1,54 @@
+{
+  "skillCategories": [
+    {
+      "id": "languages",
+      "title": "Languages",
+      "icon": "Code",
+      "color": "purple",
+      "skills": [
+        { "name": "JavaScript", "level": 5 },
+        { "name": "Java", "level": 4 },
+        { "name": "SQL", "level": 4 }
+      ]
+    },
+    {
+      "id": "frameworks",
+      "title": "Frameworks",
+      "icon": "Database",
+      "color": "blue",
+      "skills": [
+        { "name": "React.js", "level": 4 },
+        { "name": "Node.js", "level": 4 },
+        { "name": "Express.js", "level": 4 },
+        { "name": "Redux", "level": 4 },
+        { "name": "Tailwind CSS", "level": 4 }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & DB",
+      "icon": "Wrench",
+      "color": "green",
+      "skills": [
+        { "name": "Git", "level": 4 },
+        { "name": "GitHub", "level": 4 },
+        { "name": "Postman", "level": 5 },
+        { "name": "VS Code", "level": 5 },
+        { "name": "MongoDB", "level": 4 }
+      ]
+    },
+    {
+      "id": "other",
+      "title": "Other Skills",
+      "icon": "Award",
+      "color": "pink",
+      "skills": [
+        { "name": "HTML", "level": 4 },
+        { "name": "CSS", "level": 4 },
+        { "name": "REST API", "level": 3 },
+        { "name": "Socket.io", "level": 2 },
+        { "name": "Firebase", "level": 3 }
+      ]
+    }
+  ]
+}
