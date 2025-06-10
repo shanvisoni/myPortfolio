@@ -6,7 +6,8 @@
       "icon": "Code",
       "color": "purple",
       "skills": [
-        { "name": "JavaScript", "level": 5 },
+        { "name": "JavaScript", "level": 4 },
+        { "name": "TypeScript", "level": 3 },
         { "name": "Java", "level": 4 },
         { "name": "SQL", "level": 4 }
       ]
@@ -19,6 +20,7 @@
       "skills": [
         { "name": "React.js", "level": 4 },
         { "name": "Node.js", "level": 4 },
+        { "name": "Nestjs", "level": 3 },
         { "name": "Express.js", "level": 4 },
         { "name": "Redux", "level": 4 },
         { "name": "Tailwind CSS", "level": 4 }
@@ -49,6 +51,19 @@
         { "name": "Socket.io", "level": 2 },
         { "name": "Firebase", "level": 3 }
       ]
-    }
+    },
+    {
+  "id": "deployment",
+  "title": "Deployment Platforms",
+  "icon": "Globe",
+  "color": "teal",
+  "skills": [
+    { "name": "Netlify", "level": 4 },
+    { "name": "Vercel", "level": 4 },
+    { "name": "Render", "level": 4 },
+    { "name": "Railway", "level": 3 }
+  ]
+}
+
   ]
 }
