@@ -20,8 +20,8 @@
       "icon": "BookOpen",
       "gradient": "from-indigo-500 to-purple-500",
       "status": "In Progress",
-      "startDate": "07/2025",
-      "endDate": "Present",
+      "startDate": "03/2025",
+      "endDate": "05/2025",
       "demoUrl": "http://localhost:5173",
       "githubUrl": "https://github.com/shanvisoni/trackademy",
       "images": []
@@ -66,8 +66,8 @@
       "icon": "Code",
       "gradient": "from-blue-500 to-cyan-500",
       "status": "Completed",
-      "startDate": "04/2025",
-      "endDate": "08/2025",
+      "startDate": "09/2024",
+      "endDate": "01/2025",
       "demoUrl": "https://devconnector-community-1-frontend.onrender.com/",
       "githubUrl": "https://github.com/shanvisoni/DevConnector-Community",
       "images": []
