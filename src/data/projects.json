@@ -1,6 +1,32 @@
 {
   "projects": [
     {
+      "id": "trackademy",
+      "title": "Trackademy",
+      "description": "A comprehensive learning management platform combining task tracking with community engagement and social features.",
+      "longDescription": "Trackademy is a full-stack learning management platform that revolutionizes how users manage their learning journey. It combines personal task tracking with community-driven learning, featuring searchable learning communities, social interactions, and comprehensive progress analytics. Users can create and manage learning tasks while engaging with like-minded learners in specialized communities.",
+      "techStack": ["React.js", "TypeScript", "Nest.js", "MongoDB"],
+      "features": [
+        "Learning Task Management",
+        "Community Creation & Discovery",
+        "Social Posts & Interactions",
+        "Weekly Progress Analytics",
+        "Priority-based Task System",
+        "Member Profile Networking",
+        "Community Search & Filtering",
+        "Real-time Engagement Features",
+        "Personalized Dashboard"
+      ],
+      "icon": "BookOpen",
+      "gradient": "from-indigo-500 to-purple-500",
+      "status": "In Progress",
+      "startDate": "07/2025",
+      "endDate": "Present",
+      "demoUrl": "http://localhost:5173",
+      "githubUrl": "https://github.com/shanvisoni/trackademy",
+      "images": []
+    },
+    {
       "id": "skillswap",
       "title": "SkillSwap",
       "description": "A peer-to-peer platform where users exchange skills with real-time chat, smart matching, and rating system.",
