@@ -20,8 +20,8 @@
       "icon": "BookOpen",
       "gradient": "from-indigo-500 to-purple-500",
       "status": "In Progress",
-      "startDate": "03/2025",
-      "endDate": "05/2025",
+      "startDate": "07/2025",
+      "endDate": "Present",
       "demoUrl": "http://localhost:5173",
       "githubUrl": "https://github.com/shanvisoni/trackademy",
       "images": []
@@ -42,9 +42,9 @@
       ],
       "icon": "Users",
       "gradient": "from-purple-500 to-pink-500",
-      "status": "In Progress",
+      "status": "Completed",
       "startDate": "03/2025",
-      "endDate": "Present",
+      "endDate": "05/2025",
       "demoUrl": "https://theskillswap.netlify.app/",
       "githubUrl": "https://github.com/shanvisoni/SkillSwap",
       "images": []
