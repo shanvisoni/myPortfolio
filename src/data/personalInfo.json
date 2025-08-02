@@ -14,7 +14,7 @@
   "education": {
     "university": "SAGE University, Bhopal",
     "degree": "B.Tech in Computer Science and Engineering",
-    "cgpa": "8.28",
+    "cgpa": "8.35",
     "expectedGraduation": "June 2026",
     "location": "Bhopal, MP, India"
   },
@@ -23,7 +23,7 @@
     "company": "Reactify Labs",
     "type": "Remote",
     "startDate": "May 2025",
-    "endDate": "Present",
+    "endDate": "August 2025",
     "responsibilities": [
       "Working on real-world projects using the MERN stack: MongoDB, Express.js, React.js, and Node.js",
       "Collaborating with the development team on UI design and API integration",
