@@ -22,7 +22,7 @@
       "status": "In Progress",
       "startDate": "07/2025",
       "endDate": "Present",
-      "demoUrl": "http://localhost:5173",
+      "demoUrl": "https://trackademy.netlify.app/",
       "githubUrl": "https://github.com/shanvisoni/trackademy",
       "images": []
     },
