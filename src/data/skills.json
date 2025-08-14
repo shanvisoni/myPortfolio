@@ -24,7 +24,8 @@
         { "name": "Nestjs", "level": 3 },
         { "name": "Express.js", "level": 4 },
         { "name": "Redux", "level": 4 },
-        { "name": "Tailwind CSS", "level": 4 }
+        { "name": "Tailwind CSS", "level": 4 },
+        { "name": "shadcn/ui", "level": 2 }
       ]
     },
     {
@@ -33,7 +34,7 @@
       "icon": "Wrench",
       "color": "green",
       "skills": [
-        { "name": "Git", "level": 4 },
+        { "name": "Git", "level": 3 },
         { "name": "GitHub", "level": 4 },
         { "name": "Postman", "level": 4 },
         { "name": "VS Code", "level": 4 },
