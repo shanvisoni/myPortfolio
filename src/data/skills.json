@@ -25,7 +25,7 @@
         { "name": "Express.js", "level": 4 },
         { "name": "Redux", "level": 4 },
         { "name": "Tailwind CSS", "level": 4 },
-        { "name": "shadcn/ui", "level": 2 }
+        { "name": "shadcn/ui", "level": 3 }
       ]
     },
     {
