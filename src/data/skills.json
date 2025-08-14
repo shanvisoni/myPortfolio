@@ -19,6 +19,7 @@
       "color": "blue",
       "skills": [
         { "name": "React.js", "level": 4 },
+        { "name": "Next.js", "level": 2 },
         { "name": "Node.js", "level": 4 },
         { "name": "Nestjs", "level": 3 },
         { "name": "Express.js", "level": 4 },
@@ -34,8 +35,8 @@
       "skills": [
         { "name": "Git", "level": 4 },
         { "name": "GitHub", "level": 4 },
-        { "name": "Postman", "level": 5 },
-        { "name": "VS Code", "level": 5 },
+        { "name": "Postman", "level": 4 },
+        { "name": "VS Code", "level": 4 },
         { "name": "MongoDB", "level": 4 }
       ]
     },
@@ -59,7 +60,7 @@
   "color": "teal",
   "skills": [
     { "name": "Netlify", "level": 4 },
-    { "name": "Vercel", "level": 4 },
+    { "name": "Vercel", "level": 2 },
     { "name": "Render", "level": 4 },
     { "name": "Railway", "level": 3 }
   ]
