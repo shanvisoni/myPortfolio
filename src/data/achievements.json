@@ -1,36 +1,27 @@
 {
   "achievements": [
-     {
+    {
       "id": "leetcode-solver",
       "title": "LeetCode Problem Solver",
       "year": "Present",
-      "description": "Solved 350+ coding problems across various difficulty levels",
+      "description": "Solved 400+ LeetCode problems with 50-day and 100-day badges earned",
       "organization": "LeetCode",
       "type": "Achievement",
-      "category": "Programming"
+      "category": "Programming",
+      "link": "https://leetcode.com/u/shanvi_soni21/"
     },
-    
     {
       "id": "ai-certification",
-      "title": "Artificial Intelligence Beginners Guide",
+      "title": "Artificial Intelligence: Beginners Guide",
       "year": "2025",
-      "description": "Foundational certification in Artificial Intelligence concepts and applications",
+      "description": "Completed comprehensive AI certification covering foundational concepts and applications",
       "organization": "Simplilearn",
       "type": "Certification",
       "category": "AI"
     },
     {
-      "id": "myntra-hackerramp",
-      "title": "Myntra HackerRamp: WeForShe",
-      "year": "2024",
-      "description": "Certificate of Participation in Phase 1",
-      "organization": "Myntra Designs Pvt. Ltd.",
-      "type": "Competition",
-      "category": "Technology"
-    },
-    {
       "id": "java-certification",
-      "title": "Java Data Structures Certification",
+      "title": "Java Data Structures",
       "year": "2023",
       "description": "Comprehensive certification in Java Data Structures and Algorithms",
       "organization": "Great Learning",

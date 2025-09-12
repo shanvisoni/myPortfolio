@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Shanvi Soni",
     "title": "Full-Stack Developer",
-    "tagline": "Passionate B.Tech Computer Science student crafting beautiful, user-focused web applications with the MERN stack",
+    "tagline": "Passionate B.Tech Computer Science student crafting beautiful, user-focused web applications with modern technologies",
     "location": "Bhopal, MP, India",
     "phone": "+91-7388994402",
     "email": "shanvisoni7388@gmail.com",
@@ -14,25 +14,39 @@
   "education": {
     "university": "SAGE University, Bhopal",
     "degree": "B.Tech in Computer Science and Engineering",
-    "cgpa": "8.35",
+    "cgpa": "8.38",
     "expectedGraduation": "June 2026",
     "location": "Bhopal, MP, India"
   },
   "currentRole": {
-    "position": "MERN Stack Intern",
-    "company": "Reactify Labs",
-    "type": "Remote",
-    "startDate": "May 2025",
-    "endDate": "August 2025",
+    "position": "Full Stack Developer",
+    "company": "EndorseSphere Ventures Private Limited",
+    "type": "Internship | Remote",
+    "startDate": "Aug 2025",
+    "endDate": "Present",
     "responsibilities": [
-      "Working on real-world projects using the MERN stack: MongoDB, Express.js, React.js, and Node.js",
-      "Collaborating with the development team on UI design and API integration",
-      "Applying best practices in Git/GitHub, version control, and deployment",
-      "Strengthening core skills in frontend and backend development under industry mentorship"
+      "Currently developing and maintaining the EndorseSphere platform, a comprehensive endorsement system",
+      "Building full-stack features including user authentication, job posting, referral management systems",
+      "Working with modern web technologies including React.js, Node.js, PostgreSQL, and Gemini AI API",
+      "Collaborating with the development team to implement new features and maintain code quality standards"
+    ]
+  },
+  "previousRole": {
+    "position": "MERN Stack Developer",
+    "company": "Reactify Labs",
+    "type": "Internship | Remote",
+    "startDate": "May 2025",
+    "endDate": "Aug 2025",
+    "responsibilities": [
+      "Contributed to client projects, delivering responsive and scalable web applications",
+      "Built frontend components with React.js and developed backend APIs using TypeScript and NestJS",
+      "Utilized Git for version control and collaborative workflows to maintain high code quality",
+      "Gained hands-on experience in end-to-end web development following industry standards"
     ]
   },
   "summary": [
-    "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.28, I combine academic excellence with hands-on industry experience.",
-    "As a MERN Stack Intern at Reactify Labs, I work on real-world projects, collaborate with development teams, and continuously strengthen my skills in both frontend and backend development under industry mentorship."
+    "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.38, I combine academic excellence with hands-on industry experience.",
+    "As a Full Stack Developer at EndorseSphere Ventures, I'm currently developing comprehensive endorsement systems while working with modern technologies including React.js, Node.js, PostgreSQL, and Gemini AI API.",
+    "With experience at Reactify Labs and a strong foundation in MERN stack development, I bring both technical expertise and collaborative skills to every project I work on."
   ]
 }
