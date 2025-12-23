@@ -582,16 +582,9 @@ const PortfolioLook = () => {
                   <h3 className={`text-xl font-bold mb-4 ${colors.text}`}>{category.title}</h3>
                   <div className="space-y-2">
                     {category.skills.map((skill, index) => (
-                      <div key={index} className="flex items-center justify-between">
-                        <span className="text-gray-300">{skill.name}</span>
-                        <div className="flex space-x-1">
-                          {[...Array(5)].map((_, i) => (
-                            <Star 
-                              key={i} 
-                              className={`w-3 h-3 ${i < skill.level ? colors.star : 'text-gray-600'}`} 
-                            />
-                          ))}
-                        </div>
+                      <div key={index} className="flex items-center">
+                        <div className={`w-2 h-2 ${colors.bullet} rounded-full mr-3 flex-shrink-0`}></div>
+                        <span className="text-gray-300 hover:text-white transition-colors duration-300">{skill.name}</span>
                       </div>
                     ))}
                   </div>
