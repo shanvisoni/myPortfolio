@@ -12,7 +12,7 @@ const PortfolioLook = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState('purple');
+  const [currentTheme, setCurrentTheme] = useState('dark');
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
@@ -517,38 +517,48 @@ const PortfolioLook = () => {
               </div>
             </div>
 
-            {/* Previous Role */}
-            <div className="bg-gradient-to-r from-blue-900/20 to-cyan-900/20 p-8 rounded-2xl backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/40 transition-all duration-500 hover:transform hover:scale-105">
-              <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center">
-                    <Code className="w-8 h-8 text-white" />
+            {/* Previous Roles */}
+            {personalData.previousRoles && personalData.previousRoles.map((role, roleIndex) => {
+              const gradients = [
+                { bg: "from-blue-900/20 to-cyan-900/20", border: "border-blue-500/20 hover:border-blue-400/40", icon: "from-blue-500 to-cyan-500", text: "text-blue-300", date: "text-blue-400", badge: "bg-blue-900/30 text-blue-400", title: "text-blue-400", bullet: "bg-blue-400" },
+                { bg: "from-indigo-900/20 to-purple-900/20", border: "border-indigo-500/20 hover:border-indigo-400/40", icon: "from-indigo-500 to-purple-500", text: "text-indigo-300", date: "text-indigo-400", badge: "bg-indigo-900/30 text-indigo-400", title: "text-indigo-400", bullet: "bg-indigo-400" }
+              ];
+              const gradient = gradients[roleIndex % gradients.length];
+              
+              return (
+                <div key={roleIndex} className={`bg-gradient-to-r ${gradient.bg} p-8 rounded-2xl backdrop-blur-sm border ${gradient.border} transition-all duration-500 hover:transform hover:scale-105`}>
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center space-x-4">
+                      <div className={`w-16 h-16 bg-gradient-to-r ${gradient.icon} rounded-2xl flex items-center justify-center`}>
+                        <Code className="w-8 h-8 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-white">{role.position}</h3>
+                        <p className={`${gradient.text} text-lg`}>{role.company}</p>
+                        <p className="text-gray-400">{role.type}</p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <p className={`${gradient.date} font-semibold`}>{role.startDate} - {role.endDate}</p>
+                      <span className={`inline-block px-3 py-1 ${gradient.badge} rounded-full text-sm mt-2`}>
+                        Completed
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">{personalData.previousRole.position}</h3>
-                    <p className="text-blue-300 text-lg">{personalData.previousRole.company}</p>
-                    <p className="text-gray-400">{personalData.previousRole.type}</p>
+                  <div className="space-y-3">
+                    <h4 className={`text-lg font-semibold ${gradient.title} mb-3`}>Key Responsibilities:</h4>
+                    <ul className="space-y-2">
+                      {role.responsibilities.map((responsibility, index) => (
+                        <li key={index} className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
+                          <div className={`w-2 h-2 ${gradient.bullet} rounded-full mt-2 flex-shrink-0`}></div>
+                          <span>{responsibility}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-blue-400 font-semibold">{personalData.previousRole.startDate} - {personalData.previousRole.endDate}</p>
-                  <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm mt-2">
-                    Completed
-                  </span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <h4 className="text-lg font-semibold text-blue-400 mb-3">Key Responsibilities:</h4>
-                <ul className="space-y-2">
-                  {personalData.previousRole.responsibilities.map((responsibility, index) => (
-                    <li key={index} className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
-                      <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>{responsibility}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
       </section>

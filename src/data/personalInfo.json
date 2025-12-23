@@ -19,34 +19,48 @@
     "location": "Bhopal, MP, India"
   },
   "currentRole": {
-    "position": "Full Stack Developer",
-    "company": "EndorseSphere Ventures Private Limited",
+    "position": "Software Developer",
+    "company": "The KnN Migration",
     "type": "Internship | Remote",
-    "startDate": "Aug 2025",
+    "startDate": "Dec 2025",
     "endDate": "Present",
     "responsibilities": [
-      "Currently developing and maintaining the EndorseSphere platform, a comprehensive endorsement system",
-      "Building full-stack features including user authentication, job posting, referral management systems",
-      "Working with modern web technologies including React.js, Node.js, PostgreSQL, and Gemini AI API",
-      "Collaborating with the development team to implement new features and maintain code quality standards"
+      "Developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents",
+      "Building secure client portals with multi-step wizards, document uploads, and real-time status tracking",
+      "Implementing role-based dashboards, OCR-assisted validation, and SkillSelect API integrations",
+      "Working with modern technologies including Java, Spring Boot, PostgreSQL, Docker, and React.js to build scalable and maintainable solutions"
     ]
   },
-  "previousRole": {
-    "position": "MERN Stack Developer",
-    "company": "Reactify Labs",
-    "type": "Internship | Remote",
-    "startDate": "May 2025",
-    "endDate": "Aug 2025",
-    "responsibilities": [
-      "Contributed to client projects, delivering responsive and scalable web applications",
-      "Built frontend components with React.js and developed backend APIs using TypeScript and NestJS",
-      "Utilized Git for version control and collaborative workflows to maintain high code quality",
-      "Gained hands-on experience in end-to-end web development following industry standards"
-    ]
-  },
+  "previousRoles": [
+    {
+      "position": "Full Stack Developer",
+      "company": "EndorseSphere Ventures Private Limited",
+      "type": "Internship | Remote",
+      "startDate": "Aug 2025",
+      "endDate": "Nov 2025",
+      "responsibilities": [
+        "Developed a recruitment ecosystem that helps companies fill positions 40% faster while increasing the rate of retention candidates by 20%",
+        "Worked with technologies like React.js, Redux, PostgreSQL, Prisma, Node.js, Express",
+        "Built full-stack features including user authentication, job posting, referral management systems",
+        "Collaborated with the development team to implement new features and maintain code quality standards"
+      ]
+    },
+    {
+      "position": "MERN Stack Developer",
+      "company": "Reactify Labs",
+      "type": "Internship | Remote",
+      "startDate": "May 2025",
+      "endDate": "Aug 2025",
+      "responsibilities": [
+        "Contributed to client projects, Built features used by 2000+ users",
+        "Built frontend components with React.js and secure APIs with NestJS & Express, delivering end-to-end",
+        "Collaborated via Git workflows and peer reviews to ensure clean, maintainable, and production-ready code"
+      ]
+    }
+  ],
   "summary": [
     "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.38, I combine academic excellence with hands-on industry experience.",
-    "As a Full Stack Developer at EndorseSphere Ventures, I'm currently developing comprehensive endorsement systems while working with modern technologies including React.js, Node.js, PostgreSQL, and Gemini AI API.",
-    "With experience at Reactify Labs and a strong foundation in MERN stack development, I bring both technical expertise and collaborative skills to every project I work on."
+    "As a Software Developer at The KnN Migration, I'm currently developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents, building secure client portals with advanced features like OCR-assisted validation and SkillSelect API integrations.",
+    "With experience at EndorseSphere Ventures and Reactify Labs, I bring both technical expertise and collaborative skills to every project I work on."
   ]
 }
