@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Mail, Phone, Github, Linkedin, ExternalLink, Code, Database, Wrench, Award, MapPin, Calendar, Star, MessageCircle, Users, ShoppingCart, Briefcase, Globe, CheckSquare, BookOpen, Menu, X, Palette, Sparkles, Moon } from 'lucide-react';
+import { ChevronDown, Mail, Phone, Github, Linkedin, ExternalLink, Code, Database, Wrench, Award, MapPin, Calendar, Star, MessageCircle, Users, ShoppingCart, Briefcase, Globe, CheckSquare, BookOpen, Menu, X, Palette, Sparkles, Moon, Home } from 'lucide-react';
 import myPhoto from './assets/myPhoto.jpg';
 import ContactFormSolutions from './contactForm';
 // Import JSON data files
@@ -18,7 +18,7 @@ const PortfolioLook = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
-      
+
       // Calculate scroll progress
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -82,7 +82,8 @@ const PortfolioLook = () => {
       BookOpen: BookOpen,
       CheckSquare: CheckSquare,
       Briefcase: Briefcase,
-      Globe: Globe
+      Globe: Globe,
+      Home: Home
     };
     const IconComponent = icons[iconName] || Code;
     return <IconComponent className="w-6 h-6" />;
@@ -163,10 +164,10 @@ const PortfolioLook = () => {
     <div className={`min-h-screen bg-gradient-to-br ${currentThemeConfig.bg} text-white relative overflow-hidden ${currentTheme === 'dark' ? 'dark-theme-active' : ''}`}>
       {/* Scroll Progress Bar */}
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
-      
+
       {/* Dynamic Background */}
       <div className="fixed inset-0 dynamic-bg opacity-20"></div>
-      
+
       {/* Particle Effects */}
       <div className="particles">
         {[...Array(9)].map((_, i) => (
@@ -174,18 +175,17 @@ const PortfolioLook = () => {
         ))}
       </div>
       {/* Navigation */}
-      <nav className={`fixed top-0 w-full z-40 transition-all duration-500 ${
-        isScrolled ? 'bg-slate-900/90 backdrop-blur-md py-4 shadow-lg shadow-purple-500/10' : 'bg-transparent py-6'
-      }`}>
+      <nav className={`fixed top-0 w-full z-40 transition-all duration-500 ${isScrolled ? 'bg-slate-900/90 backdrop-blur-md py-4 shadow-lg shadow-purple-500/10' : 'bg-transparent py-6'
+        }`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className={`text-2xl font-bold bg-gradient-to-r ${currentThemeConfig.secondary} bg-clip-text text-transparent animate-pulse`}>
             {personalData.personalInfo.name}
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
-              <ScrollToSection 
+              <ScrollToSection
                 key={item}
                 sectionId={item.toLowerCase()}
                 className={`hover:text-${currentThemeConfig.accent} transition-all duration-300 relative group transform hover:scale-110`}
@@ -194,7 +194,7 @@ const PortfolioLook = () => {
                 <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r ${currentThemeConfig.secondary} group-hover:w-full transition-all duration-500`}></span>
               </ScrollToSection>
             ))}
-            
+
             {/* Theme Switcher */}
             <div className="relative group">
               <button className="p-2 rounded-lg bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 transition-all duration-300">
@@ -209,15 +209,13 @@ const PortfolioLook = () => {
                     <button
                       key={theme}
                       onClick={() => setCurrentTheme(theme)}
-                      className={`flex flex-col items-center space-y-2 p-3 rounded-lg transition-all duration-300 hover:scale-105 ${
-                        currentTheme === theme 
-                          ? 'bg-slate-700/50 ring-2 ring-white/30' 
+                      className={`flex flex-col items-center space-y-2 p-3 rounded-lg transition-all duration-300 hover:scale-105 ${currentTheme === theme
+                          ? 'bg-slate-700/50 ring-2 ring-white/30'
                           : 'bg-slate-700/30 hover:bg-slate-700/50'
-                      }`}
+                        }`}
                     >
-                      <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${
-                        themes[theme].primary
-                      } transition-all duration-300 hover:scale-110 flex items-center justify-center`}>
+                      <div className={`w-8 h-8 rounded-full bg-gradient-to-r ${themes[theme].primary
+                        } transition-all duration-300 hover:scale-110 flex items-center justify-center`}>
                         {theme === 'dark' && <Moon className="w-4 h-4 text-white" />}
                       </div>
                       <span className="text-xs text-gray-300 font-medium">
@@ -244,7 +242,7 @@ const PortfolioLook = () => {
           <div className="md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md border-t border-slate-700/50 shadow-lg">
             <div className="container mx-auto px-6 py-4 space-y-4">
               {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Contact'].map((item) => (
-                <ScrollToSection 
+                <ScrollToSection
                   key={item}
                   sectionId={item.toLowerCase()}
                   closeMobileMenu={true}
@@ -253,7 +251,7 @@ const PortfolioLook = () => {
                   {item}
                 </ScrollToSection>
               ))}
-              
+
               {/* Mobile Theme Switcher */}
               <div className="pt-4 border-t border-slate-700/50">
                 <div className="text-sm font-semibold text-gray-300 mb-3">Choose Theme</div>
@@ -265,15 +263,13 @@ const PortfolioLook = () => {
                         setCurrentTheme(theme);
                         setIsMobileMenuOpen(false);
                       }}
-                      className={`flex flex-col items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${
-                        currentTheme === theme 
-                          ? 'bg-slate-700/50 ring-1 ring-white/30' 
+                      className={`flex flex-col items-center space-y-1 p-2 rounded-lg transition-all duration-300 ${currentTheme === theme
+                          ? 'bg-slate-700/50 ring-1 ring-white/30'
                           : 'bg-slate-700/30 hover:bg-slate-700/50'
-                      }`}
+                        }`}
                     >
-                      <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${
-                        themes[theme].primary
-                      } transition-all duration-300 flex items-center justify-center`}>
+                      <div className={`w-6 h-6 rounded-full bg-gradient-to-r ${themes[theme].primary
+                        } transition-all duration-300 flex items-center justify-center`}>
                         {theme === 'dark' && <Moon className="w-3 h-3 text-white" />}
                       </div>
                       <span className="text-xs text-gray-300">
@@ -289,21 +285,21 @@ const PortfolioLook = () => {
       </nav>
 
       {/* Hero Section */}
-       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-slate-900/20 to-slate-900"></div>
-        
+
         {/* Enhanced Animated background shapes */}
         <div className="absolute inset-0">
           <div className={`absolute top-20 left-20 w-72 h-72 bg-${currentThemeConfig.accent}/10 rounded-full blur-3xl morphing-shape animate-pulse`}></div>
-          <div className={`absolute bottom-20 right-20 w-96 h-96 bg-${currentThemeConfig.accent}/10 rounded-full blur-3xl morphing-shape animate-pulse`} style={{animationDelay: '2s'}}></div>
-          <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-${currentThemeConfig.accent}/10 rounded-full blur-3xl morphing-shape animate-pulse`} style={{animationDelay: '4s'}}></div>
-          
+          <div className={`absolute bottom-20 right-20 w-96 h-96 bg-${currentThemeConfig.accent}/10 rounded-full blur-3xl morphing-shape animate-pulse`} style={{ animationDelay: '2s' }}></div>
+          <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-${currentThemeConfig.accent}/10 rounded-full blur-3xl morphing-shape animate-pulse`} style={{ animationDelay: '4s' }}></div>
+
           {/* Floating geometric shapes */}
           <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-purple-400/30 rotate-45 animate-float"></div>
-          <div className="absolute top-3/4 right-1/4 w-6 h-6 bg-pink-400/30 rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-400/30 rotate-45 animate-float" style={{animationDelay: '2s'}}></div>
+          <div className="absolute top-3/4 right-1/4 w-6 h-6 bg-pink-400/30 rounded-full animate-float" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-1/4 left-1/3 w-3 h-3 bg-blue-400/30 rotate-45 animate-float" style={{ animationDelay: '2s' }}></div>
         </div>
-        
+
         <div className="text-center z-10 px-6 animate-fadeInUp">
           <div className="mb-8 relative group">
             {/* Profile Image Container with enhanced animations */}
@@ -312,12 +308,12 @@ const PortfolioLook = () => {
               <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${currentThemeConfig.primary} animate-spin-slow p-1 opacity-80 glow-effect`}>
                 <div className="w-full h-full rounded-full bg-slate-900"></div>
               </div>
-              
+
               {/* Main profile container */}
               <div className={`absolute inset-2 rounded-full bg-gradient-to-r ${currentThemeConfig.primary} p-1 group-hover:scale-105 transition-transform duration-500 interactive-card`}>
                 <div className="w-full h-full rounded-full bg-slate-800 overflow-hidden relative">
                   {/* Profile Image */}
-                  <img 
+                  <img
                     src={myPhoto}
                     alt={personalData.personalInfo.name}
                     className="w-full h-full object-cover rounded-full hover:scale-110 transition-transform duration-700"
@@ -328,12 +324,12 @@ const PortfolioLook = () => {
                     }}
                   />
                   {/* Fallback initials (hidden by default) */}
-                  <div className={`absolute inset-0 flex items-center justify-center text-6xl font-bold bg-gradient-to-r ${currentThemeConfig.secondary} bg-clip-text text-transparent`} style={{display: 'none'}}>
+                  <div className={`absolute inset-0 flex items-center justify-center text-6xl font-bold bg-gradient-to-r ${currentThemeConfig.secondary} bg-clip-text text-transparent`} style={{ display: 'none' }}>
                     {personalData.personalInfo.name.split(' ').map(n => n[0]).join('')}
                   </div>
                 </div>
               </div>
-              
+
               {/* Enhanced floating elements around profile */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-bounce flex items-center justify-center glow-effect">
                 <Code className="w-4 h-4 text-white" />
@@ -343,13 +339,13 @@ const PortfolioLook = () => {
               </div>
               <div className="absolute top-8 -left-8 w-6 h-6 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full animate-pulse morphing-shape"></div>
               <div className="absolute bottom-8 -right-8 w-6 h-6 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full animate-pulse delay-500 morphing-shape"></div>
-              
+
               {/* Sparkle effects */}
               <div className="absolute top-4 right-4 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
               <div className="absolute bottom-4 left-4 w-2 h-2 bg-blue-300 rounded-full animate-ping delay-1000"></div>
             </div>
           </div>
-          
+
           <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r ${currentThemeConfig.secondary} bg-clip-text text-transparent animate-textShimmer`}>
             {personalData.personalInfo.name}
           </h1>
@@ -358,7 +354,7 @@ const PortfolioLook = () => {
             {personalData.personalInfo.tagline}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fadeInUp delay-700">
-            <ScrollToSection 
+            <ScrollToSection
               sectionId="projects"
               className={`px-8 py-4 bg-gradient-to-r ${currentThemeConfig.primary} rounded-full hover:scale-110 hover:-translate-y-2 shadow-lg hover:shadow-purple-500/50 relative overflow-hidden group btn-magic wave-effect`}
             >
@@ -367,14 +363,14 @@ const PortfolioLook = () => {
                 <span>View My Work</span>
               </span>
             </ScrollToSection>
-            <ScrollToSection 
+            <ScrollToSection
               sectionId="contact"
               className={`px-8 py-4 border-2 border-${currentThemeConfig.accent} rounded-full hover:bg-${currentThemeConfig.accent} hover:text-slate-900 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2 hover:shadow-lg hover:shadow-purple-400/50 interactive-card`}
             >
               Let's Connect
             </ScrollToSection>
           </div>
-          <ScrollToSection 
+          <ScrollToSection
             sectionId="about"
             className="animate-bounce hover:animate-pulse transition-all duration-300"
           >
@@ -384,7 +380,7 @@ const PortfolioLook = () => {
       </section>
 
 
-       <section id="about" className="py-24 px-6 relative">
+      <section id="about" className="py-24 px-6 relative">
         <div className="container mx-auto max-w-6xl">
           <h2 className={`text-4xl font-bold text-center mb-16 bg-gradient-to-r ${currentThemeConfig.secondary} bg-clip-text text-transparent animate-fadeInUp`}>
             About Me
@@ -402,7 +398,7 @@ const PortfolioLook = () => {
                   I specialize in the <span className="text-purple-400 font-semibold">MERN stack</span> and have experience working with modern technologies including React.js, Node.js, PostgreSQL, and AI APIs. My approach to development is user-centric, always focusing on creating intuitive and scalable solutions.
                 </p>
               </div>
-              
+
               <div className="grid grid-cols-2 gap-6 pt-6">
                 <div className="bg-gradient-to-br from-purple-900/20 to-slate-900/20 p-6 rounded-xl backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-300">
                   <div className="flex items-center space-x-3 mb-3">
@@ -420,7 +416,7 @@ const PortfolioLook = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-8 animate-fadeInRight">
               <div className="bg-gradient-to-br from-slate-800/50 to-slate-900/50 p-8 rounded-2xl backdrop-blur-sm border border-slate-700/50 hover:border-purple-500/50 transition-all duration-500">
                 <h3 className="text-2xl font-bold mb-6 text-purple-400">What I Do</h3>
@@ -454,7 +450,7 @@ const PortfolioLook = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-gradient-to-br from-indigo-900/20 to-purple-900/20 p-6 rounded-xl backdrop-blur-sm border border-indigo-500/20 hover:border-indigo-400/40 transition-all duration-300">
                 <h4 className="text-lg font-semibold text-indigo-400 mb-4">Fun Facts</h4>
                 <ul className="space-y-2 text-gray-300">
@@ -524,7 +520,7 @@ const PortfolioLook = () => {
                 { bg: "from-indigo-900/20 to-purple-900/20", border: "border-indigo-500/20 hover:border-indigo-400/40", icon: "from-indigo-500 to-purple-500", text: "text-indigo-300", date: "text-indigo-400", badge: "bg-indigo-900/30 text-indigo-400", title: "text-indigo-400", bullet: "bg-indigo-400" }
               ];
               const gradient = gradients[roleIndex % gradients.length];
-              
+
               return (
                 <div key={roleIndex} className={`bg-gradient-to-r ${gradient.bg} p-8 rounded-2xl backdrop-blur-sm border ${gradient.border} transition-all duration-500 hover:transform hover:scale-105`}>
                   <div className="flex items-start justify-between mb-6">
@@ -573,7 +569,7 @@ const PortfolioLook = () => {
             {skillsData.skillCategories.map((category) => {
               const colors = getColorClasses(category.color);
               const IconComponent = getIconComponent(category.icon);
-              
+
               return (
                 <div key={category.id} className={`bg-gradient-to-br ${colors.bg} p-6 rounded-2xl backdrop-blur-sm border ${colors.border} hover:transform hover:scale-105 transition-all duration-300`}>
                   <div className={`w-8 h-8 ${colors.icon} mb-4`}>
@@ -635,23 +631,22 @@ const PortfolioLook = () => {
                 </div>
 
                 <div className="flex items-center justify-between">
-  <a 
-    href={project.demoUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-300 group"
-  >
-    <span>View Project</span>
-    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-  </a>
-  <span className={`text-xs px-2 py-1 rounded-full ${
-    project.status === 'Completed' 
-      ? 'bg-green-900/30 text-green-400' 
-      : 'bg-yellow-900/30 text-yellow-400'
-  }`}>
-    {project.status}
-  </span>
-</div>
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-purple-400 hover:text-purple-300 transition-colors duration-300 group"
+                  >
+                    <span>View Project</span>
+                    <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
+                  <span className={`text-xs px-2 py-1 rounded-full ${project.status === 'Completed'
+                      ? 'bg-green-900/30 text-green-400'
+                      : 'bg-yellow-900/30 text-yellow-400'
+                    }`}>
+                    {project.status}
+                  </span>
+                </div>
 
               </div>
             ))}
@@ -693,7 +688,7 @@ const PortfolioLook = () => {
                   </span>
                 </div>
                 {achievement.link && (
-                  <a 
+                  <a
                     href={achievement.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -787,7 +782,7 @@ const PortfolioLook = () => {
         </div>
       </section> */}
 
-       <section id="contact" className="py-24 px-6">
+      <section id="contact" className="py-24 px-6">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
             Let's Connect
@@ -802,7 +797,7 @@ const PortfolioLook = () => {
           <div className="flex flex-col items-center space-y-6">
             {/* Social Links */}
             <div className="flex justify-center space-x-6">
-              <a 
+              <a
                 href={personalData.personalInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -811,7 +806,7 @@ const PortfolioLook = () => {
               >
                 <Linkedin className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
-              <a 
+              <a
                 href={personalData.personalInfo.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -820,7 +815,7 @@ const PortfolioLook = () => {
               >
                 <Github className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
-              <a 
+              <a
                 href={personalData.personalInfo.leetcode}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -829,7 +824,7 @@ const PortfolioLook = () => {
               >
                 <Code className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
-              <a 
+              <a
                 href={`mailto:${personalData.personalInfo.email}`}
                 className="w-12 h-12 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full flex items-center justify-center hover:scale-110 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 group"
                 title="Email"
@@ -837,7 +832,7 @@ const PortfolioLook = () => {
                 <Mail className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               </a>
             </div>
-            
+
             {/* Copyright */}
             <p className="text-sm text-gray-500 text-center">
               © 2025 {personalData.personalInfo.name}. All rights reserved.

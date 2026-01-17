@@ -1,11 +1,47 @@
 {
   "projects": [
     {
+      "id": "roomiematch",
+      "title": "RoomieMatch",
+      "description": "A full-stack roommate matching platform for finding compatible living companions based on lifestyle and location.",
+      "longDescription": "RoomieMatch is a full-stack platform designed to help users find compatible roommates. It features a robust matching system based on lifestyle preferences and location. The platform allows users to manage profiles, upload photos, and connect with potential roommates. Key features include real-time messaging using Socket.io (enabled only after mutual connection acceptance), JWT-based secure authentication, and a scalable backend powered by Node.js, Express, and Prisma with PostgreSQL.",
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "PostgreSQL",
+        "Prisma",
+        "Supabase",
+        "Socket.io"
+      ],
+      "features": [
+        "Lifestyle & Location Matching",
+        "Real-time Messaging (Socket.io)",
+        "Connection Request System",
+        "JWT Authentication",
+        "Profile Management",
+        "Image Uploads",
+        "RESTful APIs"
+      ],
+      "icon": "Home",
+      "gradient": "from-teal-400 to-cyan-500",
+      "status": "In Progress",
+      "startDate": "09/2025",
+      "endDate": "Present",
+      "demoUrl": "https://github.com/shanvisoni/RoommateMatch",
+      "githubUrl": "https://github.com/shanvisoni/RoommateMatch",
+      "images": []
+    },
+    {
       "id": "trackademy",
       "title": "Trackademy",
       "description": "A comprehensive learning management platform combining task tracking with community engagement and social features.",
       "longDescription": "Trackademy is a full-stack learning management platform that revolutionizes how users manage their learning journey. It combines personal task tracking with community-driven learning, featuring searchable learning communities, social interactions, and comprehensive progress analytics. Users can create and manage learning tasks while engaging with like-minded learners in specialized communities.",
-      "techStack": ["React.js", "TypeScript", "Nest.js", "MongoDB"],
+      "techStack": [
+        "React.js",
+        "TypeScript",
+        "Nest.js",
+        "MongoDB"
+      ],
       "features": [
         "Learning Task Management",
         "Community Creation & Discovery",
@@ -31,7 +67,13 @@
       "title": "SkillSwap",
       "description": "A peer-to-peer platform where users exchange skills with real-time chat, smart matching, and rating system.",
       "longDescription": "SkillSwap revolutionizes skill exchange by connecting users who want to teach and learn different skills. The platform features intelligent matching algorithms, real-time communication, and a comprehensive rating system to ensure quality interactions.",
-      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Socket.io"],
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "Socket.io"
+      ],
       "features": [
         "Real-time Chat",
         "Smart Matching Algorithm",
@@ -54,7 +96,13 @@
       "title": "DevConnector",
       "description": "A full-stack social networking platform for developers with GitHub integration and professional profiles.",
       "longDescription": "DevConnector is a comprehensive social networking platform designed specifically for developers. It integrates with GitHub to showcase repositories, enables professional networking, and provides a space for developers to share their experiences and connect with peers.",
-      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "Redux"
+      ],
       "features": [
         "GitHub API Integration",
         "JWT Authentication",
@@ -77,7 +125,13 @@
       "title": "ShopSphere",
       "description": "E-commerce platform with advanced filtering, cart management, and comprehensive admin dashboard.",
       "longDescription": "ShopSphere is a full-featured e-commerce solution with advanced product filtering, secure payment integration, comprehensive order management, and a powerful admin dashboard for managing products, categories, and customer orders.",
-      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
+      "techStack": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "Redux"
+      ],
       "features": [
         "Advanced Product Filtering",
         "Shopping Cart Management",
@@ -95,12 +149,17 @@
       "githubUrl": "https://github.com/shanvisoni/shopSphere_",
       "images": []
     },
-     {
+    {
       "id": "taskorganizer",
       "title": "Task Organizer",
       "description": "A dynamic task manager with features like create/edit/delete and status tracking for personalized user access.",
       "longDescription": "Task Organizer is a comprehensive task management application that helps users organize their daily activities efficiently. The application features secure user authentication, optimized state management, and an intuitive interface for managing tasks with different priority levels and status tracking.",
-      "techStack": ["React.js", "Redux Toolkit", "Tailwind CSS", "Firebase"],
+      "techStack": [
+        "React.js",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Firebase"
+      ],
       "features": [
         "Create/Edit/Delete Tasks",
         "Status Tracking System",
