@@ -18,19 +18,32 @@
     "expectedGraduation": "June 2026",
     "location": "Bhopal, MP, India"
   },
-  "currentRole": {
-    "position": "Software Developer",
-    "company": "The KnN Migration",
-    "type": "Internship | Remote",
-    "startDate": "Dec 2025",
-    "endDate": "Present",
-    "responsibilities": [
-      "Developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents",
-      "Building secure client portals with multi-step wizards, document uploads, and real-time status tracking",
-      "Implementing role-based dashboards, OCR-assisted validation, and SkillSelect API integrations",
-      "Working with modern technologies including Java, Spring Boot, PostgreSQL, Docker, and React.js to build scalable and maintainable solutions"
-    ]
-  },
+  "currentRoles": [
+    {
+      "position": "Full Stack Developer",
+      "company": "iWin Infotech",
+      "type": "Internship | Remote",
+      "startDate": "Dec 2025",
+      "endDate": "Present",
+      "responsibilities": [
+        "Working on live gaming platforms for USA users, enhancing React-based applications and delivering updates",
+        "Improved and extended frontend components, while maintaining performance and code quality in a shared codebase"
+      ]
+    },
+    {
+      "position": "Software Developer",
+      "company": "The KnN Migration",
+      "type": "Internship | Remote",
+      "startDate": "Dec 2025",
+      "endDate": "Present",
+      "responsibilities": [
+        "Developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents",
+        "Building secure client portals with multi-step wizards, document uploads, and real-time status tracking",
+        "Implementing role-based dashboards, OCR-assisted validation, and SkillSelect API integrations",
+        "Working with modern technologies including Java, Spring Boot, PostgreSQL, Docker, and React.js to build scalable and maintainable solutions"
+      ]
+    }
+  ],
   "previousRoles": [
     {
       "position": "Full Stack Developer",
@@ -60,7 +73,7 @@
   ],
   "summary": [
     "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.38, I combine academic excellence with hands-on industry experience.",
-    "As a Software Developer at The KnN Migration, I'm currently developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents, building secure client portals with advanced features like OCR-assisted validation and SkillSelect API integrations.",
+    "As a Full Stack Developer at iWin Infotech and Software Developer at The KnN Migration, I'm working on live gaming platforms and EOI management SaaS, building secure portals and features with React, Java, Spring Boot, and modern tooling.",
     "With experience at EndorseSphere Ventures and Reactify Labs, I bring both technical expertise and collaborative skills to every project I work on."
   ]
 }

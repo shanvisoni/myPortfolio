@@ -389,13 +389,14 @@ const PortfolioLook = () => {
             <div className="space-y-8 animate-fadeInLeft">
               <div className="space-y-6">
                 <p className="text-xl text-gray-300 leading-relaxed">
-                  Hello! I'm <span className="text-purple-400 font-semibold">Shanvi Soni</span>, a passionate and driven Computer Science student at SAGE University, Bhopal, with a deep love for creating innovative web solutions.
+                  Hello! I'm <span className="text-purple-400 font-semibold">Shanvi Soni</span>, a Computer Science student at SAGE University, Bhopal, with a strong focus on building products that users and businesses rely on.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Currently maintaining a CGPA of <span className="text-purple-400 font-semibold">8.38</span>, I combine academic excellence with hands-on industry experience. My journey in technology began with curiosity and has evolved into a passion for building meaningful applications that solve real-world problems.
+                  I maintain a CGPA of <span className="text-purple-400 font-semibold">8.38</span> while gaining real industry experience. I've worked on <span className="text-purple-400 font-semibold">client-facing projects</span>—from live platforms for international users to SaaS products for migration and recruitment—delivering features, 
+                  individually as well as collaborating with teams, and maintaining code quality in shared codebases.
                 </p>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  I specialize in the <span className="text-purple-400 font-semibold">MERN stack</span> and have experience working with modern technologies including React.js, Node.js, PostgreSQL, and AI APIs. My approach to development is user-centric, always focusing on creating intuitive and scalable solutions.
+                  I focus on full-stack development with a <span className="text-purple-400 font-semibold">user-centric approach</span>: clear UX, scalable architecture, and clean, maintainable code. I enjoy turning requirements into reliable applications and learning from each project and team.
                 </p>
               </div>
 
@@ -480,38 +481,47 @@ const PortfolioLook = () => {
             Work Experience
           </h2>
           <div className="space-y-8">
-            {/* Current Role */}
-            <div className="bg-gradient-to-r from-purple-900/20 to-pink-900/20 p-8 rounded-2xl backdrop-blur-sm border border-purple-500/20 hover:border-purple-400/40 transition-all duration-500 hover:transform hover:scale-105">
-              <div className="flex items-start justify-between mb-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
-                    <Briefcase className="w-8 h-8 text-white" />
+            {/* Current Roles */}
+            {personalData.currentRoles && personalData.currentRoles.map((role, roleIndex) => {
+              const currentGradients = [
+                { bg: "from-purple-900/20 to-pink-900/20", border: "border-purple-500/20 hover:border-purple-400/40", icon: "from-purple-500 to-pink-500", text: "text-purple-300", date: "text-purple-400", title: "text-purple-400", bullet: "bg-purple-400" },
+                { bg: "from-teal-900/20 to-cyan-900/20", border: "border-teal-500/20 hover:border-teal-400/40", icon: "from-teal-500 to-cyan-500", text: "text-teal-300", date: "text-teal-400", title: "text-teal-400", bullet: "bg-teal-400" }
+              ];
+              const g = currentGradients[roleIndex % currentGradients.length];
+              return (
+                <div key={roleIndex} className={`bg-gradient-to-r ${g.bg} p-8 rounded-2xl backdrop-blur-sm border ${g.border} transition-all duration-500 hover:transform hover:scale-105`}>
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="flex items-center space-x-4">
+                      <div className={`w-16 h-16 bg-gradient-to-r ${g.icon} rounded-2xl flex items-center justify-center`}>
+                        <Briefcase className="w-8 h-8 text-white" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-white">{role.position}</h3>
+                        <p className={`${g.text} text-lg`}>{role.company}</p>
+                        <p className="text-gray-400">{role.type}</p>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <p className={`${g.date} font-semibold`}>{role.startDate} - {role.endDate}</p>
+                      <span className="inline-block px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-sm mt-2">
+                        Current
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-white">{personalData.currentRole.position}</h3>
-                    <p className="text-purple-300 text-lg">{personalData.currentRole.company}</p>
-                    <p className="text-gray-400">{personalData.currentRole.type}</p>
+                  <div className="space-y-3">
+                    <h4 className={`text-lg font-semibold ${g.title} mb-3`}>Key Responsibilities:</h4>
+                    <ul className="space-y-2">
+                      {role.responsibilities.map((responsibility, index) => (
+                        <li key={index} className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
+                          <div className={`w-2 h-2 ${g.bullet} rounded-full mt-2 flex-shrink-0`}></div>
+                          <span>{responsibility}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
-                <div className="text-right">
-                  <p className="text-purple-400 font-semibold">{personalData.currentRole.startDate} - {personalData.currentRole.endDate}</p>
-                  <span className="inline-block px-3 py-1 bg-green-900/30 text-green-400 rounded-full text-sm mt-2">
-                    Current
-                  </span>
-                </div>
-              </div>
-              <div className="space-y-3">
-                <h4 className="text-lg font-semibold text-purple-400 mb-3">Key Responsibilities:</h4>
-                <ul className="space-y-2">
-                  {personalData.currentRole.responsibilities.map((responsibility, index) => (
-                    <li key={index} className="flex items-start space-x-3 text-gray-300 hover:text-white transition-colors duration-300">
-                      <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>{responsibility}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+              );
+            })}
 
             {/* Previous Roles */}
             {personalData.previousRoles && personalData.previousRoles.map((role, roleIndex) => {
