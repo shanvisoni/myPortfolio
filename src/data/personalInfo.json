@@ -29,22 +29,22 @@
         "Working on live gaming platforms for USA users, enhancing React-based applications and delivering updates",
         "Improved and extended frontend components, while maintaining performance and code quality in a shared codebase"
       ]
-    },
+    }
+  ],
+  "previousRoles": [
     {
       "position": "Software Developer",
       "company": "The KnN Migration",
       "type": "Internship | Remote",
       "startDate": "Dec 2025",
-      "endDate": "Present",
+      "endDate": "Feb 2026",
       "responsibilities": [
         "Developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents",
         "Building secure client portals with multi-step wizards, document uploads, and real-time status tracking",
         "Implementing role-based dashboards, OCR-assisted validation, and SkillSelect API integrations",
         "Working with modern technologies including Java, Spring Boot, PostgreSQL, Docker, and React.js to build scalable and maintainable solutions"
       ]
-    }
-  ],
-  "previousRoles": [
+    },
     {
       "position": "Full Stack Developer",
       "company": "EndorseSphere Ventures Private Limited",

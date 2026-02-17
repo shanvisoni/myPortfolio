@@ -6,11 +6,22 @@
       "icon": "Code",
       "color": "purple",
       "skills": [
-        { "name": "JavaScript", "level": 4 },
-        { "name": "TypeScript", "level": 4 },
-        { "name": "Java", "level": 4 },
-        { "name": "SQL", "level": 3 }
-       
+        {
+          "name": "JavaScript",
+          "level": 4
+        },
+        {
+          "name": "TypeScript",
+          "level": 4
+        },
+        {
+          "name": "Java",
+          "level": 4
+        },
+        {
+          "name": "SQL",
+          "level": 3
+        }
       ]
     },
     {
@@ -19,12 +30,30 @@
       "icon": "Database",
       "color": "blue",
       "skills": [
-        { "name": "React.js", "level": 4 },
-        { "name": "Next.js", "level": 3 },
-        { "name": "Redux Toolkit", "level": 4 },
-        { "name": "Tailwind CSS", "level": 4 },
-        { "name": "HTML", "level": 4 },
-        { "name": "CSS", "level": 4 }
+        {
+          "name": "React.js",
+          "level": 4
+        },
+        {
+          "name": "Next.js",
+          "level": 3
+        },
+        {
+          "name": "Redux Toolkit",
+          "level": 4
+        },
+        {
+          "name": "Tailwind CSS",
+          "level": 4
+        },
+        {
+          "name": "HTML",
+          "level": 4
+        },
+        {
+          "name": "CSS",
+          "level": 4
+        }
       ]
     },
     {
@@ -33,11 +62,26 @@
       "icon": "Wrench",
       "color": "green",
       "skills": [
-        { "name": "Node.js", "level": 4 },
-        { "name": "Express.js", "level": 4 },
-        { "name": "NestJS", "level": 4 },
-        { "name": "RESTful APIs", "level": 4 },
-        { "name": "Socket.io", "level": 3 }
+        {
+          "name": "Node.js",
+          "level": 4
+        },
+        {
+          "name": "Express.js",
+          "level": 4
+        },
+        {
+          "name": "NestJS",
+          "level": 4
+        },
+        {
+          "name": "RESTful APIs",
+          "level": 4
+        },
+        {
+          "name": "Socket.io",
+          "level": 3
+        }
       ]
     },
     {
@@ -46,9 +90,18 @@
       "icon": "Award",
       "color": "pink",
       "skills": [
-        { "name": "MongoDB", "level": 4 },
-        { "name": "MySQL", "level": 3 },
-        { "name": "PostgreSQL", "level": 3 }
+        {
+          "name": "MongoDB",
+          "level": 4
+        },
+        {
+          "name": "MySQL",
+          "level": 3
+        },
+        {
+          "name": "PostgreSQL",
+          "level": 3
+        }
       ]
     },
     {
@@ -57,12 +110,30 @@
       "icon": "Code",
       "color": "teal",
       "skills": [
-        { "name": "Git", "level": 4 },
-        { "name": "GitHub", "level": 4 },
-        { "name": "Postman", "level": 4 },
-        { "name": "VS Code", "level": 4 },
-        { "name": "Cursor", "level": 4 },
-        { "name": "Docker", "level": 4 }
+        {
+          "name": "Git",
+          "level": 4
+        },
+        {
+          "name": "GitHub",
+          "level": 4
+        },
+        {
+          "name": "Postman",
+          "level": 4
+        },
+        {
+          "name": "VS Code",
+          "level": 4
+        },
+        {
+          "name": "Cursor",
+          "level": 4
+        },
+        {
+          "name": "Docker",
+          "level": 4
+        }
       ]
     },
     {
@@ -71,11 +142,30 @@
       "icon": "Database",
       "color": "orange",
       "skills": [
-        { "name": "Netlify", "level": 4 },
-        { "name": "Vercel", "level": 2 },
-        { "name": "Render", "level": 4 },
-        { "name": "Railway", "level": 2 },
-        { "name": "Firebase", "level": 3 }
+        {
+          "name": "AWS",
+          "level": 2
+        },
+        {
+          "name": "Netlify",
+          "level": 4
+        },
+        {
+          "name": "Vercel",
+          "level": 2
+        },
+        {
+          "name": "Render",
+          "level": 4
+        },
+        {
+          "name": "Railway",
+          "level": 2
+        },
+        {
+          "name": "Firebase",
+          "level": 3
+        }
       ]
     },
     {
@@ -84,9 +174,18 @@
       "icon": "Award",
       "color": "indigo",
       "skills": [
-        { "name": "Data Structures & Algorithms", "level": 4 },
-        { "name": "OOP", "level": 4 },
-        { "name": "Version Control", "level": 4 }
+        {
+          "name": "Data Structures & Algorithms",
+          "level": 4
+        },
+        {
+          "name": "OOP",
+          "level": 4
+        },
+        {
+          "name": "Version Control",
+          "level": 4
+        }
       ]
     }
   ]
