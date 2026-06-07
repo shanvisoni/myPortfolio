@@ -1,13 +1,40 @@
-import { useState } from 'react';
-import { Search, Power, Star } from 'lucide-react';
+import { useState, useEffect, useRef } from 'react';
+import { Search, Settings, Star, RotateCcw, Sparkles } from 'lucide-react';
 import { APPS, getApp } from './appsConfig';
 import myPhoto from '../../assets/myPhoto.jpg';
 import personalData from '../../data/personalInfo.json';
 
 const RECRUITER_APP_IDS = ['about', 'experience', 'projects', 'contact', 'resume'];
 
-export default function StartMenu({ isOpen, onClose, onOpenApp, onOpenResume }) {
+export default function StartMenu({
+  isOpen,
+  onClose,
+  onOpenApp,
+  onOpenResume,
+  onResetDesktop,
+  reduceMotion,
+  onToggleReduceMotion,
+}) {
   const [search, setSearch] = useState('');
+  const [systemMenuOpen, setSystemMenuOpen] = useState(false);
+  const systemMenuRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) setSystemMenuOpen(false);
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!systemMenuOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (systemMenuRef.current && !systemMenuRef.current.contains(e.target)) {
+        setSystemMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [systemMenuOpen]);
 
   if (!isOpen) return null;
 
@@ -24,6 +51,17 @@ export default function StartMenu({ isOpen, onClose, onOpenApp, onOpenResume }) 
       onOpenApp(appId);
     }
     onClose();
+  };
+
+  const handleReset = () => {
+    onResetDesktop();
+    setSystemMenuOpen(false);
+    onClose();
+  };
+
+  const handleToggleMotion = () => {
+    onToggleReduceMotion();
+    setSystemMenuOpen(false);
   };
 
   return (
@@ -88,9 +126,33 @@ export default function StartMenu({ isOpen, onClose, onOpenApp, onOpenResume }) 
               <span className="start-user-role">{personalData.personalInfo.title}</span>
             </div>
           </div>
-          <button className="start-power" aria-label="Power">
-            <Power size={18} />
-          </button>
+
+          <div className="start-system-wrap" ref={systemMenuRef}>
+            {systemMenuOpen && (
+              <div className="start-system-menu">
+                <span className="start-system-label">System</span>
+                <button type="button" className="start-system-item" onClick={handleReset}>
+                  <RotateCcw size={16} />
+                  <span>Reset Desktop</span>
+                  <small>Close all windows</small>
+                </button>
+                <button type="button" className="start-system-item" onClick={handleToggleMotion}>
+                  <Sparkles size={16} />
+                  <span>{reduceMotion ? 'Enable Motion' : 'Reduce Motion'}</span>
+                  <small>{reduceMotion ? 'Turn animations back on' : 'Calmer background'}</small>
+                </button>
+              </div>
+            )}
+            <button
+              type="button"
+              className={`start-power ${systemMenuOpen ? 'active' : ''}`}
+              onClick={() => setSystemMenuOpen((open) => !open)}
+              aria-label="System settings"
+              aria-expanded={systemMenuOpen}
+            >
+              <Settings size={18} />
+            </button>
+          </div>
         </div>
       </div>
     </>

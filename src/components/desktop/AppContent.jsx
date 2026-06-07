@@ -13,10 +13,10 @@ import myPhoto from '../../assets/myPhoto.jpg';
 const { personalInfo, education, currentRoles, previousRoles, summary } = personalData;
 
 const METRICS = [
-  { label: 'Production Projects', value: '6+', icon: Rocket, color: '#a78bfa' },
+  { label: 'Production Projects', value: '10+', icon: Rocket, color: '#a78bfa' },
+  { label: 'Client Projects', value: '5+', icon: Grid3x3, color: '#f472b6' },
   { label: 'LeetCode Problems', value: '400+', icon: Zap, color: '#38bdf8' },
   { label: 'Users Impacted', value: '2000+', icon: Users, color: '#34d399' },
-  { label: 'Internships', value: '4', icon: Grid3x3, color: '#f472b6' },
   { label: 'CGPA', value: education.cgpa, icon: Shield, color: '#fb923c' },
   { label: 'Tech Stack Skills', value: '25+', icon: Settings, color: '#60a5fa' },
   { label: 'Certifications', value: '3+', icon: Megaphone, color: '#facc15' },
@@ -24,12 +24,12 @@ const METRICS = [
 ];
 
 const AI_RESPONSES = {
-  who: `Shanvi Soni is a Full-Stack Developer and B.Tech CSE student at SAGE University, Bhopal (CGPA ${education.cgpa}). She builds production-grade web apps with React, Node.js, and modern tooling.`,
-  projects: `Featured projects: RoomieMatch (roommate matching), Trackademy (LMS), SkillSwap (skill exchange), DevConnector (dev social network), ShopSphere (e-commerce), and Task Organizer.`,
-  stack: `Core stack: React.js, TypeScript, Node.js, NestJS, Express, PostgreSQL, MongoDB, Prisma, Docker, Tailwind CSS, Socket.io, and AWS/Netlify for deployment.`,
-  work: `Currently at iWin Infotech (gaming platforms). Previously: The KnN Migration (SaaS), EndorseSphere Ventures (recruitment), Reactify Labs (MERN).`,
+  who: `Shanvi Soni is an Associate Software Engineer and B.Tech CSE student at SAGE University, Bhopal (CGPA ${education.cgpa}). She builds production web platforms with React, Node.js, Spring Boot, and modern full-stack tooling.`,
+  projects: `Client projects: Listify.ae (UAE marketplace), CanHiring.com (recruitment), GreenTechExperts.in, HomeTuitionz.com, InternTak.com. Personal: RoomieMatch, Trackademy, DevConnector, ShopSphere.`,
+  stack: `Core stack: React.js, Next.js, TypeScript, Node.js, NestJS, Spring Boot, Express, PostgreSQL, MongoDB, Docker, Tailwind CSS, REST APIs, and AWS/Firebase for deployment.`,
+  work: `Currently Associate Software Engineer at iWin Labs (gaming platforms). Previously: KNN Migration Advisors (SaaS), TheEndorse (recruitment + AI workflows), Reactify Labs (MERN, 2000+ users).`,
   contact: `Email: ${personalInfo.email} | Phone: ${personalInfo.phone} | LinkedIn & GitHub links in Contact app.`,
-  hire: `Shanvi is open to Full-Stack Developer, React, and Software Engineer roles. Available for remote opportunities!`,
+  hire: `Shanvi is an Associate Software Engineer open to full-stack, React, and software engineering opportunities.`,
 };
 
 const AI_SUGGESTIONS = [
@@ -125,19 +125,30 @@ export function ProjectsContent() {
         {projectsData.projects.map((project) => (
           <div key={project.id} className="project-card">
             <div className="project-header">
-              <h3>{project.title}</h3>
+              <div>
+                <h3>{project.title}</h3>
+                {project.subtitle && <p className="project-subtitle">{project.subtitle}</p>}
+              </div>
               <span className={`project-status ${project.status === 'Completed' ? 'done' : 'wip'}`}>
                 {project.status}
               </span>
             </div>
+            {project.projectType && (
+              <span className={`project-type ${project.projectType === 'Freelance Client' ? 'client' : 'personal'}`}>
+                {project.projectType}
+              </span>
+            )}
             <p className="project-desc">{project.description}</p>
+            {project.startDate && (
+              <p className="project-dates">{project.startDate} — {project.endDate}</p>
+            )}
             <div className="project-tags">
-              {project.techStack.slice(0, 4).map((t) => (
+              {project.techStack.slice(0, 5).map((t) => (
                 <span key={t} className="tag">{t}</span>
               ))}
             </div>
             <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="project-link">
-              View Project <ExternalLink size={14} />
+              View Live <ExternalLink size={14} />
             </a>
           </div>
         ))}
@@ -179,20 +190,19 @@ export function CodeLabContent() {
           <span className="code-tab active">portfolio.jsx</span>
           <span className="code-tab">about.ts</span>
         </div>
-        <pre className="code-block">{`// Shanvi Soni — Full-Stack Developer
+        <pre className="code-block">{`// Shanvi Soni — Associate Software Engineer
 const developer = {
   name: "${personalInfo.name}",
   role: "${personalInfo.title}",
   location: "${personalInfo.location}",
   education: "${education.degree}",
   cgpa: ${education.cgpa},
-  openToWork: true,
+  company: "iWin Labs",
 };
 
 const stack = [
-  "React", "TypeScript", "Node.js",
-  "NestJS", "PostgreSQL", "MongoDB",
-  "Docker", "Tailwind CSS"
+  "React", "Next.js", "TypeScript", "Node.js",
+  "Spring Boot", "NestJS", "PostgreSQL", "Docker"
 ];
 
 const build = () => {

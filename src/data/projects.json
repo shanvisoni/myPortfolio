@@ -1,25 +1,68 @@
 {
   "projects": [
     {
+      "id": "listify",
+      "title": "Listify.ae",
+      "subtitle": "UAE Marketplace Platform",
+      "projectType": "Freelance Client",
+      "description": "UAE classifieds and marketplace platform covering property, motors, jobs, services, and community listings across all emirates.",
+      "longDescription": "Developed a UAE marketplace platform supporting property, motors, jobs, services, and classified listings. Built advanced search, category-based navigation, and listing management workflows with responsive interfaces and scalable architecture for multi-category marketplace operations.",
+      "techStack": ["React.js", "Next.js", "Node.js", "PostgreSQL"],
+      "features": [
+        "Multi-category Listings",
+        "Advanced Search",
+        "Category Navigation",
+        "Listing Management",
+        "Responsive UI",
+        "UAE City Filters"
+      ],
+      "icon": "Globe",
+      "gradient": "from-amber-500 to-orange-500",
+      "status": "Completed",
+      "startDate": "09/2025",
+      "endDate": "12/2025",
+      "demoUrl": "https://listify.ae/",
+      "githubUrl": "",
+      "images": []
+    },
+    {
+      "id": "canhiring",
+      "title": "CanHiring.com",
+      "subtitle": "Recruitment Platform",
+      "projectType": "Freelance Client",
+      "description": "Job recruitment platform connecting candidates and employers with job discovery and hiring workflows.",
+      "longDescription": "Developed recruitment platform features for candidate management and job posting workflows. Built role-based dashboards for recruiters and applicants with REST APIs, authentication, and database-driven search functionality.",
+      "techStack": ["React.js", "Node.js", "PostgreSQL", "REST APIs"],
+      "features": [
+        "Job Posting",
+        "Candidate Management",
+        "Role-based Dashboards",
+        "Authentication",
+        "Search & Filters"
+      ],
+      "icon": "Briefcase",
+      "gradient": "from-blue-600 to-cyan-500",
+      "status": "Completed",
+      "startDate": "2025",
+      "endDate": "2025",
+      "demoUrl": "http://canhiring.com/",
+      "githubUrl": "",
+      "images": []
+    },
+    {
       "id": "roomiematch",
       "title": "RoomieMatch",
-      "description": "A full-stack roommate matching platform for finding compatible living companions based on lifestyle and location.",
-      "longDescription": "RoomieMatch is a full-stack platform designed to help users find compatible roommates. It features a robust matching system based on lifestyle preferences and location. The platform allows users to manage profiles, upload photos, and connect with potential roommates. Key features include real-time messaging using Socket.io (enabled only after mutual connection acceptance), JWT-based secure authentication, and a scalable backend powered by Node.js, Express, and Prisma with PostgreSQL.",
-      "techStack": [
-        "React.js",
-        "Node.js",
-        "PostgreSQL",
-        "Prisma",
-        "Supabase",
-        "Socket.io"
-      ],
+      "subtitle": "Roommate Matching Platform",
+      "projectType": "Personal Project",
+      "description": "Full-stack roommate matching platform for finding compatible living companions based on lifestyle and location.",
+      "longDescription": "RoomieMatch helps users find compatible roommates with lifestyle and location matching, real-time messaging via Socket.io, JWT authentication, and a scalable Node.js, Express, and Prisma backend with PostgreSQL.",
+      "techStack": ["React.js", "Node.js", "PostgreSQL", "Prisma", "Socket.io"],
       "features": [
-        "Lifestyle & Location Matching",
-        "Real-time Messaging (Socket.io)",
-        "Connection Request System",
+        "Lifestyle Matching",
+        "Real-time Messaging",
+        "Connection Requests",
         "JWT Authentication",
         "Profile Management",
-        "Image Uploads",
         "RESTful APIs"
       ],
       "icon": "Home",
@@ -32,26 +75,91 @@
       "images": []
     },
     {
+      "id": "greentech",
+      "title": "GreenTechExperts.in",
+      "subtitle": "Business Services Platform",
+      "projectType": "Freelance Client",
+      "description": "Business services platform with lead generation, inquiry management, and service discovery for agricultural solutions.",
+      "longDescription": "Developed a business services platform with lead generation and inquiry management features. Built responsive landing pages, service discovery workflows, and optimized website performance, SEO structure, and user experience.",
+      "techStack": ["React.js", "Next.js", "Node.js", "Tailwind CSS"],
+      "features": [
+        "Lead Generation",
+        "Inquiry Management",
+        "Service Discovery",
+        "Responsive Landing Pages",
+        "SEO Optimization"
+      ],
+      "icon": "Globe",
+      "gradient": "from-green-500 to-emerald-500",
+      "status": "Completed",
+      "startDate": "09/2025",
+      "endDate": "12/2025",
+      "demoUrl": "https://greentechexperts.in/",
+      "githubUrl": "",
+      "images": []
+    },
+    {
+      "id": "hometuitionz",
+      "title": "HomeTuitionz.com",
+      "subtitle": "Tutor-Student Matching Platform",
+      "projectType": "Freelance Client",
+      "description": "Tutor-student matching platform for home tuition services with student and tutor registration across Bhopal.",
+      "longDescription": "Developed a tutor-student matching platform for online and offline learning services. Implemented tutor profiles, inquiry management, subject-based search, and responsive interfaces with backend integrations for seamless user experience.",
+      "techStack": ["React.js", "Node.js", "REST APIs", "Tailwind CSS"],
+      "features": [
+        "Tutor Profiles",
+        "Student Registration",
+        "Inquiry Management",
+        "Subject-based Search",
+        "Responsive UI"
+      ],
+      "icon": "BookOpen",
+      "gradient": "from-violet-500 to-purple-500",
+      "status": "Completed",
+      "startDate": "2025",
+      "endDate": "2025",
+      "demoUrl": "https://hometuitionz.com/",
+      "githubUrl": "",
+      "images": []
+    },
+    {
+      "id": "interntak",
+      "title": "InternTak.com",
+      "subtitle": "Internship Portal",
+      "projectType": "Freelance Client",
+      "description": "Internship discovery and application platform connecting students with recruiters and opportunities.",
+      "longDescription": "Built internship discovery and application workflows for students and recruiters. Implemented profile management, job applications, search/filter functionality, and responsive UI with backend APIs for platform operations.",
+      "techStack": ["React.js", "Node.js", "Express.js", "MongoDB"],
+      "features": [
+        "Internship Discovery",
+        "Application Workflows",
+        "Profile Management",
+        "Search & Filters",
+        "Recruiter Tools"
+      ],
+      "icon": "Briefcase",
+      "gradient": "from-indigo-500 to-blue-500",
+      "status": "Completed",
+      "startDate": "03/2025",
+      "endDate": "05/2025",
+      "demoUrl": "https://interntak.com/",
+      "githubUrl": "",
+      "images": []
+    },
+    {
       "id": "trackademy",
       "title": "Trackademy",
-      "description": "A comprehensive learning management platform combining task tracking with community engagement and social features.",
-      "longDescription": "Trackademy is a full-stack learning management platform that revolutionizes how users manage their learning journey. It combines personal task tracking with community-driven learning, featuring searchable learning communities, social interactions, and comprehensive progress analytics. Users can create and manage learning tasks while engaging with like-minded learners in specialized communities.",
-      "techStack": [
-        "React.js",
-        "TypeScript",
-        "Nest.js",
-        "MongoDB"
-      ],
+      "subtitle": "Learning Management Platform",
+      "projectType": "Personal Project",
+      "description": "Learning management platform combining task tracking with community engagement and social features.",
+      "longDescription": "Trackademy combines personal task tracking with community-driven learning, featuring searchable learning communities, social interactions, and comprehensive progress analytics.",
+      "techStack": ["React.js", "TypeScript", "Nest.js", "MongoDB"],
       "features": [
-        "Learning Task Management",
-        "Community Creation & Discovery",
-        "Social Posts & Interactions",
-        "Weekly Progress Analytics",
-        "Priority-based Task System",
-        "Member Profile Networking",
-        "Community Search & Filtering",
-        "Real-time Engagement Features",
-        "Personalized Dashboard"
+        "Task Management",
+        "Learning Communities",
+        "Progress Analytics",
+        "Social Posts",
+        "Community Search"
       ],
       "icon": "BookOpen",
       "gradient": "from-indigo-500 to-purple-500",
@@ -63,53 +171,19 @@
       "images": []
     },
     {
-      "id": "skillswap",
-      "title": "SkillSwap",
-      "description": "A peer-to-peer platform where users exchange skills with real-time chat, smart matching, and rating system.",
-      "longDescription": "SkillSwap revolutionizes skill exchange by connecting users who want to teach and learn different skills. The platform features intelligent matching algorithms, real-time communication, and a comprehensive rating system to ensure quality interactions.",
-      "techStack": [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "Express.js",
-        "Socket.io"
-      ],
-      "features": [
-        "Real-time Chat",
-        "Smart Matching Algorithm",
-        "Rating System",
-        "Location-based Search",
-        "Skill Categories",
-        "User Profiles"
-      ],
-      "icon": "Users",
-      "gradient": "from-purple-500 to-pink-500",
-      "status": "Completed",
-      "startDate": "03/2025",
-      "endDate": "05/2025",
-      "demoUrl": "https://theskillswap.netlify.app/",
-      "githubUrl": "https://github.com/shanvisoni/SkillSwap",
-      "images": []
-    },
-    {
       "id": "devconnector",
       "title": "DevConnector",
-      "description": "A full-stack social networking platform for developers with GitHub integration and professional profiles.",
-      "longDescription": "DevConnector is a comprehensive social networking platform designed specifically for developers. It integrates with GitHub to showcase repositories, enables professional networking, and provides a space for developers to share their experiences and connect with peers.",
-      "techStack": [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "Express.js",
-        "Redux"
-      ],
+      "subtitle": "Developer Social Network",
+      "projectType": "Personal Project",
+      "description": "Full-stack social networking platform for developers with GitHub integration and professional profiles.",
+      "longDescription": "DevConnector integrates with GitHub to showcase repositories, enables professional networking, and provides a space for developers to share experiences and connect with peers.",
+      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
       "features": [
-        "GitHub API Integration",
+        "GitHub Integration",
         "JWT Authentication",
-        "Real-time Updates",
         "Professional Profiles",
-        "Post & Comment System",
-        "Experience Showcase"
+        "Posts & Comments",
+        "Real-time Updates"
       ],
       "icon": "Code",
       "gradient": "from-blue-500 to-cyan-500",
@@ -123,21 +197,16 @@
     {
       "id": "shopsphere",
       "title": "ShopSphere",
+      "subtitle": "E-commerce Platform",
+      "projectType": "Personal Project",
       "description": "E-commerce platform with advanced filtering, cart management, and comprehensive admin dashboard.",
-      "longDescription": "ShopSphere is a full-featured e-commerce solution with advanced product filtering, secure payment integration, comprehensive order management, and a powerful admin dashboard for managing products, categories, and customer orders.",
-      "techStack": [
-        "React.js",
-        "Node.js",
-        "MongoDB",
-        "Express.js",
-        "Redux"
-      ],
+      "longDescription": "ShopSphere is a full-featured e-commerce solution with advanced product filtering, secure payment integration, order management, and a powerful admin dashboard.",
+      "techStack": ["React.js", "Node.js", "MongoDB", "Express.js", "Redux"],
       "features": [
-        "Advanced Product Filtering",
-        "Shopping Cart Management",
-        "Order Tracking System",
+        "Product Filtering",
+        "Shopping Cart",
+        "Order Tracking",
         "Admin Dashboard",
-        "Secure Authentication",
         "Payment Integration"
       ],
       "icon": "ShoppingCart",
@@ -152,23 +221,17 @@
     {
       "id": "taskorganizer",
       "title": "Task Organizer",
-      "description": "A dynamic task manager with features like create/edit/delete and status tracking for personalized user access.",
-      "longDescription": "Task Organizer is a comprehensive task management application that helps users organize their daily activities efficiently. The application features secure user authentication, optimized state management, and an intuitive interface for managing tasks with different priority levels and status tracking.",
-      "techStack": [
-        "React.js",
-        "Redux Toolkit",
-        "Tailwind CSS",
-        "Firebase"
-      ],
+      "subtitle": "Task Management App",
+      "projectType": "Personal Project",
+      "description": "Dynamic task manager with create/edit/delete, status tracking, and personalized user access.",
+      "longDescription": "Task Organizer features secure Firebase authentication, Redux state management, and an intuitive interface for managing tasks with priority levels and status tracking.",
+      "techStack": ["React.js", "Redux Toolkit", "Tailwind CSS", "Firebase"],
       "features": [
-        "Create/Edit/Delete Tasks",
-        "Status Tracking System",
-        "Firebase Authentication",
-        "Personalized User Access",
-        "Redux State Management",
-        "Responsive Design",
-        "Task Priority Levels",
-        "Real-time Updates"
+        "CRUD Tasks",
+        "Status Tracking",
+        "Firebase Auth",
+        "Redux State",
+        "Responsive Design"
       ],
       "icon": "CheckSquare",
       "gradient": "from-orange-500 to-red-500",

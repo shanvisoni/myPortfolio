@@ -1,8 +1,8 @@
 {
   "personalInfo": {
     "name": "Shanvi Soni",
-    "title": "Full-Stack Developer",
-    "tagline": "Passionate B.Tech Computer Science student crafting beautiful, user-focused web applications with modern technologies",
+    "title": "Associate Software Engineer",
+    "tagline": "Associate Software Engineer building production web platforms — from UAE marketplaces and recruitment systems to gaming products serving international users.",
     "location": "Bhopal, MP, India",
     "phone": "+91-7388994402",
     "email": "shanvisoni7388@gmail.com",
@@ -20,42 +20,41 @@
   },
   "currentRoles": [
     {
-      "position": "Full Stack Developer",
-      "company": "iWin Infotech",
-      "type": "Internship | Remote",
-      "startDate": "Dec 2025",
+      "position": "Associate Software Engineer",
+      "company": "iWin Labs",
+      "type": "Full-Time (Intern → FTE) | Remote",
+      "startDate": "Jan 2026",
       "endDate": "Present",
       "responsibilities": [
-        "Working on live gaming platforms for USA users, enhancing React-based applications and delivering updates",
-        "Improved and extended frontend components, while maintaining performance and code quality in a shared codebase"
+        "Develop and maintain React-based gaming platforms serving international users",
+        "Deliver production features, bug fixes, and UI enhancements while collaborating within a shared codebase",
+        "Maintain performance and code quality standards across live production systems"
       ]
     }
   ],
   "previousRoles": [
     {
       "position": "Software Developer",
-      "company": "The KnN Migration",
+      "company": "KNN Migration Advisors",
       "type": "Internship | Remote",
       "startDate": "Dec 2025",
       "endDate": "Feb 2026",
       "responsibilities": [
-        "Developing an Expression of Interest (EOI) management SaaS platform for Australian migration agents",
-        "Building secure client portals with multi-step wizards, document uploads, and real-time status tracking",
-        "Implementing role-based dashboards, OCR-assisted validation, and SkillSelect API integrations",
-        "Working with modern technologies including Java, Spring Boot, PostgreSQL, Docker, and React.js to build scalable and maintainable solutions"
+        "Independently led end-to-end development of an EOI management SaaS platform for Australian migration agents",
+        "Implemented role-based dashboards, authentication features, and Australia's SkillSelect API integrations",
+        "Built secure client portals with multi-step workflows using Java, Spring Boot, PostgreSQL, Docker, and React.js"
       ]
     },
     {
       "position": "Full Stack Developer",
-      "company": "EndorseSphere Ventures Private Limited",
+      "company": "TheEndorse",
       "type": "Internship | Remote",
       "startDate": "Aug 2025",
       "endDate": "Nov 2025",
       "responsibilities": [
-        "Developed a recruitment ecosystem that helps companies fill positions 40% faster while increasing the rate of retention candidates by 20%",
-        "Worked with technologies like React.js, Redux, PostgreSQL, Prisma, Node.js, Express",
-        "Built full-stack features including user authentication, job posting, referral management systems",
-        "Collaborated with the development team to implement new features and maintain code quality standards"
+        "Built recruitment platform features using React, Redux, Node.js, and PostgreSQL",
+        "Contributed to AI-powered workflows using Gemini API to improve candidate evaluation processes",
+        "Developed full-stack features including authentication, job posting, and referral management systems"
       ]
     },
     {
@@ -65,15 +64,15 @@
       "startDate": "May 2025",
       "endDate": "Aug 2025",
       "responsibilities": [
-        "Contributed to client projects, Built features used by 2000+ users",
-        "Built frontend components with React.js and secure APIs with NestJS & Express, delivering end-to-end",
-        "Collaborated via Git workflows and peer reviews to ensure clean, maintainable, and production-ready code"
+        "Built production features for client projects serving USA and Dubai markets, used by 2000+ users",
+        "Developed React components and secure APIs using NestJS & Express, delivering end-to-end solutions",
+        "Collaborated via Git-based code reviews to ensure clean, maintainable, and production-ready code"
       ]
     }
   ],
   "summary": [
-    "I'm a motivated B.Tech Computer Science student at SAGE University, Bhopal, with a strong passion for full-stack development. Currently maintaining a CGPA of 8.38, I combine academic excellence with hands-on industry experience.",
-    "As a Full Stack Developer at iWin Infotech and Software Developer at The KnN Migration, I'm working on live gaming platforms and EOI management SaaS, building secure portals and features with React, Java, Spring Boot, and modern tooling.",
-    "With experience at EndorseSphere Ventures and Reactify Labs, I bring both technical expertise and collaborative skills to every project I work on."
+    "Associate Software Engineer and B.Tech Computer Science student at SAGE University, Bhopal (CGPA 8.38), with hands-on experience across full-time product engineering and freelance client delivery.",
+    "Currently at iWin Labs building React-based gaming platforms for international users. Previously led SaaS development at KNN Migration Advisors and shipped recruitment features at TheEndorse.",
+    "Delivered freelance platforms including Listify.ae (UAE marketplace), CanHiring.com, GreenTechExperts.in, InternTak.com, and HomeTuitionz.com — alongside personal projects like RoomieMatch and Trackademy."
   ]
 }

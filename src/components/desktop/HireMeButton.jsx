@@ -1,9 +1,13 @@
 import { useState } from 'react';
 import { Sparkles, X } from 'lucide-react';
 import personalData from '../../data/personalInfo.json';
+import { useBreakpoint } from '../../hooks/useBreakpoint';
 
-export default function HireMeButton({ onOpenContact }) {
+export default function HireMeButton({ onOpenContact, hidden }) {
   const [showTooltip, setShowTooltip] = useState(false);
+  const { isMobile } = useBreakpoint();
+
+  if (isMobile || hidden) return null;
 
   return (
     <div className="hire-me-wrap">
@@ -13,7 +17,7 @@ export default function HireMeButton({ onOpenContact }) {
             <X size={14} />
           </button>
           <p><strong>Available for Work</strong></p>
-          <p>Full-Stack · React · Software Engineer roles</p>
+          <p>Associate Software Engineer · Full-Stack · React</p>
           <a href={`mailto:${personalData.personalInfo.email}`} className="hire-tooltip-btn">
             Get in touch
           </a>

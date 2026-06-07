@@ -9,6 +9,7 @@ export default function Window({
   isOpen,
   isMinimized,
   isMaximized,
+  compact,
   zIndex,
   position,
   size,
@@ -21,8 +22,11 @@ export default function Window({
   const [isDragging, setIsDragging] = useState(false);
   const dragOffset = useRef({ x: 0, y: 0 });
 
+  const fullscreen = compact || isMaximized;
+
   const handleMouseDown = useCallback(
     (e) => {
+      if (fullscreen || compact) return;
       if (e.target.closest('.window-controls')) return;
       onFocus(id);
       setIsDragging(true);
@@ -31,16 +35,16 @@ export default function Window({
         y: e.clientY - position.y,
       };
     },
-    [id, onFocus, position]
+    [id, onFocus, position, fullscreen, compact]
   );
 
   useEffect(() => {
-    if (!isDragging) return;
+    if (!isDragging || fullscreen) return;
 
     const handleMouseMove = (e) => {
       onMove(id, {
-        x: e.clientX - dragOffset.current.x,
-        y: e.clientY - dragOffset.current.y,
+        x: Math.max(0, e.clientX - dragOffset.current.x),
+        y: Math.max(0, e.clientY - dragOffset.current.y),
       });
     };
 
@@ -52,12 +56,12 @@ export default function Window({
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging, id, onMove]);
+  }, [isDragging, id, onMove, fullscreen]);
 
   if (!isOpen || isMinimized) return null;
 
-  const style = isMaximized
-    ? { top: 48, left: 72, right: 16, bottom: 72, width: 'auto', height: 'auto' }
+  const style = fullscreen
+    ? undefined
     : {
         top: position.y,
         left: position.x,
@@ -67,7 +71,7 @@ export default function Window({
 
   return (
     <div
-      className={`os-window ${isMaximized ? 'maximized' : ''} ${isDragging ? 'dragging' : ''}`}
+      className={`os-window ${fullscreen ? 'maximized' : ''} ${compact ? 'compact' : ''} ${isDragging ? 'dragging' : ''}`}
       style={{ ...style, zIndex }}
       onMouseDown={() => onFocus(id)}
     >
@@ -77,13 +81,39 @@ export default function Window({
           <span>{title}</span>
         </div>
         <div className="window-controls">
-          <button className="win-btn minimize" onClick={() => onMinimize(id)} aria-label="Minimize">
+          <button
+            type="button"
+            className="win-btn minimize"
+            onClick={(e) => {
+              e.stopPropagation();
+              onMinimize(id);
+            }}
+            aria-label={compact ? 'Back to home' : 'Minimize'}
+          >
             <Minus size={14} />
           </button>
-          <button className="win-btn maximize" onClick={() => onMaximize(id)} aria-label="Maximize">
-            <Square size={12} />
-          </button>
-          <button className="win-btn close" onClick={() => onClose(id)} aria-label="Close">
+          {!compact && (
+            <button
+              type="button"
+              className="win-btn maximize"
+              onClick={(e) => {
+                e.stopPropagation();
+                onMaximize(id);
+              }}
+              aria-label="Maximize"
+            >
+              <Square size={12} />
+            </button>
+          )}
+          <button
+            type="button"
+            className="win-btn close"
+            onClick={(e) => {
+              e.stopPropagation();
+              onClose(id);
+            }}
+            aria-label="Close"
+          >
             <X size={14} />
           </button>
         </div>

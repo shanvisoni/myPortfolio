@@ -75,8 +75,16 @@
           "level": 4
         },
         {
+          "name": "Spring Boot",
+          "level": 4
+        },
+        {
           "name": "RESTful APIs",
           "level": 4
+        },
+        {
+          "name": "WebSocket",
+          "level": 3
         },
         {
           "name": "Socket.io",
