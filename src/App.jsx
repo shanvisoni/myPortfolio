@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import PortfolioLook from './PortfolioLook'
+import DesktopPortfolio from './DesktopPortfolio'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-    <PortfolioLook />
-    </>
-  )
+  return <DesktopPortfolio />
 }
 
 export default App
